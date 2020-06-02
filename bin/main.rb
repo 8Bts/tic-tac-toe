@@ -1,4 +1,3 @@
-# coding: utf-8
 
 puts 'Welcome!! to Tic Tac Toe, a game for geniuses'
 puts 'player 1: please enter your name'
@@ -17,16 +16,23 @@ puts '  7  ||  8  ||  9 ||'
 # Determine player to go first
 players = [p1_name, p2_name]
 play_first = players[rand(2)]
+play_second = players.select { |elem| elem != play_first}
 puts "#{play_first} has been randomly chosen to play first"
 
-# until game_over?
-# Clean the console and print the board again
+
+# until Game.game_over?
 puts 'Choose one cell from the board between 1 and 9'
-gets.chomp.to_i
+puts "#{play_first}'s turn"
+turn = gets.chomp.to_i
+#Validate turn variable
+# player1.pushturn(turn)
+# Game.won?(player1)
+# Update board
 # Second players turn to mark the board
-puts "#{play_first} has choosen, it's your turn to choose your place on the board"
-gets.chomp.to_i
+puts "#{play_second.join("")}'s turn'"
+turn = gets.chomp.to_i
+#Validate turn variable
+# player2.pushturn(turn)
+# Game.won?(player2)
+# Update board
 # end
-
-
-
