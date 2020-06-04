@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-
 puts 'Welcome!! to Tic Tac Toe, a game for geniuses'
 puts 'player 1: please enter your name'
 p1_name = gets.chomp
