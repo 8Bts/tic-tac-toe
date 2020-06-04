@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
-require './lib/player.rb'
+require_relative '../lib/game_board'
+require_relative '../lib/player.rb'
 
 puts 'Welcome!! to Tic Tac Toe, a game for geniuses'
 puts 'player 1: please enter your name'
@@ -9,12 +10,7 @@ puts 'player 2: please enter your name'
 p2_name = gets.chomp
 
 # Board will be required from board.rb file
-puts '----Game board-----'
-puts '  1  ||  2  ||  3  '
-puts ' =================='
-puts '  4  ||  5  ||  6  '
-puts ' =================='
-puts '  7  ||  8  ||  9  '
+
 
 # Determine player to go first
 players = [p1_name, p2_name]
@@ -24,18 +20,20 @@ play_second = play_second_arr[0]
 puts "#{play_first} has been randomly chosen to play first"
 
 # until Game.game_over?
+GameBoard.update_board
 puts 'Choose one cell from the board between 1 and 9'
 puts "#{play_first}'s turn"
 turn = gets.chomp.to_i
-puts "#{play_first} signed index #{turn} on board"
+GameBoard.mark_board(turn, 'X')
+puts GameBoard.update_board
 # Validate turn variable
 # player1.pushturn(turn)
 # Game.won?(player1)
 # Update board
 # Second players turn to mark the board
-puts "#{play_second.join('')}'s turn'"
+puts "#{play_second}'s turn'"
 turn = gets.chomp.to_i
-puts "#{play_second} signed index #{turn} on board"
+GameBoard.mark_board(turn, 'Y')
 # Validate turn variable
 # player2.pushturn(turn)
 # Game.won?(player2)
