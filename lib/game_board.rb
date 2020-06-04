@@ -11,11 +11,11 @@ class GameBoard
   end
 
   def self.mark_board(index, sign)
-    return 'Wrong index' if (index < 1 || index > 9)
-
-    return "The cell with index[#{index}] is already signed" if @@board_cells[index - 1].is_a?(String)
+       
+    return "The cell with index[#{index}] is already signed, choose another cell on board" if @@board_cells[index - 1].is_a?(String)
 
     @@board_cells[index - 1] = sign
+
   end
 
   def self.clear_board
@@ -27,6 +27,7 @@ class GameBoard
     GameBoard.print_board
   end
 end
+
 
 
 
