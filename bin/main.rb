@@ -20,7 +20,7 @@ play_second = play_second_arr[0]
 puts "#{play_first} has been randomly chosen to play first"
 
 # until Game.game_over?
-GameBoard.update_board
+puts GameBoard.update_board
 puts 'Choose one cell from the board between 1 and 9'
 puts "#{play_first}'s turn"
 turn = gets.chomp.to_i
