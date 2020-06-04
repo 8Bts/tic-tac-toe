@@ -20,36 +20,39 @@ play_first = players[rand(2)]
 play_second = players.find { |elem| elem != play_first }
 puts "#{play_first.name} has been randomly chosen to play first"
 sleep(2)
-counter = 0
-while counter < 9
-  puts GameBoard.update_board
-  puts "#{play_first.name}'s turn'"
+
+def logic(player)
+puts "#{player.name}'s turn'"
   puts "Enter a number from 1 to 9"
   turn = gets.chomp.to_i
-  result = play_first.make_turn(turn)
+  result = player.make_turn(turn)
   while result != turn do
     puts result
     turn = gets.chomp.to_i
-    result = play_first.make_turn(turn)
+    result = player.make_turn(turn)
   end
-  puts GameBoard.update_board
-  if GamePlay.won?(play_first)
-    puts "#{play_first.name} won the game!"
-    break
-  end
-  counter += 1
-
-  puts "#{play_second.name}'s turn'"
-  puts "Enter a number from 1 to 9"
-  turn = gets.chomp.to_i
-  result = play_second.make_turn(turn)
-  until result == turn do
-    puts result
-    turn = gets.chomp.to_i
-    result = play_second.make_turn(turn)
-  end
-  if GamePlay.won?(play_second)
-    puts "#{play_second.name} won the game!"
-    break
-  end  
 end
+
+def has_winner?(player)
+  if GamePlay.won?(player)
+    puts "#{player.name} won the game!"
+    return true
+  end
+  false
+end
+
+counter = 0
+while counter < 9
+  puts GameBoard.update_board
+  logic(play_first)
+  puts GameBoard.update_board
+  break if has_winner?(play_first)
+  counter += 1
+  break if counter > 8
+  logic(play_second)
+  puts GameBoard.update_board
+  break if has_winner?(play_second)
+  counter += 1
+  
+end
+
