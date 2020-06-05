@@ -67,6 +67,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
  
 - <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>
-- <a href="https://ruby-doc.org/core-2.6.1/Enumerable.html#method-i-all-3F" target="_blank">Ruby Docs</a>
+- <a href="https://ruby-doc.org/core-2.6.1/" target="_blank">Ruby Docs</a>
 - <a href="https://www.stackoverflow.com/" target="_blank">Stackoverflow</a>
 
