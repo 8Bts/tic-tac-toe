@@ -3,23 +3,30 @@ This project is about building simple tic tac toe game which is a console applic
 
 # Object Oriented PRogramming - Tic Tac Toe console game
 
-This project is about exercising the main concepts of object oriented programming particularly  classes and access to their attributes to build a tic tac toe game that runs in the terminal.
+This project is about exercising the main concepts of object-oriented programming particularly classes and access to their attributes to build a tic tac toe game that runs in the terminal.
 
-<h3>About Game</h3>
-<p>Tic Tac To is a game played between two players. It is played on a 3X3 grid board an can be played for as many time as desired. 
-Players take turns to mark the grid and their selections are reflected on the grid with X and O characters. The winner of the game is determined when one of players markes a complete row or column or diagonal of the grid. </p>
+<h3>About the Game</h3>
+<p>Tic Tac Toe is a game played between two players. It is played on a 3X3 grid board and can be played for as many times as desired. 
+Players take turns to mark the grid and their selections are reflected on the grid with X and O characters. The winner of the game is determined when one of the players makes a complete row or column or diagonal of the grid. </p>
+
+<h3>How to play</h3>
+On each turn, players must select a cell number displayed on the board which is going to be marked with players' special sign. To make a selection player must enter the number that represents a cell. This number has to be in the 1 to 9 range. You cannot sign a cell that is already signed. In order to win a game, the player has to sign 3 cells that follow each other horizontally, vertically, or diagonally.
+
+Here are some winning cases:
+
+![screenshot](https://github.com/8Bts/tic-tac-toe/tree/readme_game_instructions/TICTACTOE.png)
 
 <h3>Project description</h3>
-In this branch we created actual logic for the tic-tac-toe game. We defined _Player_, _GameBoard_ classes and _GamePlay_ module in the seperate .rb files. Here is the purposes of these assets:
+In this branch, we created actual logic for the tic-tac-toe game. We defined _Player_, _GameBoard_ classes, and _GamePlay_ module in the separate .rb files. Here are the purposes of these assets:
 
 - **Player**
- This class represent player information like _name_, played turns and _sign_ used to mark gameboard. It also defines 2 methods which are responsible to _make_turn_ and _reset_ the turns state.
+ This class represents player information like _name_, played turns, and _sign_ used to mark gameboard. It also defines 2 methods that are responsible for _make_turn_ and _reset_ the turns state.
 
 - **GameBoard**
-This class is responsible for rendering game board, modifying and resetting it. It has 1 class variable _@@board_cells_ which is used for storing(and modifying!) the values of board cells, and it has 5 class methods to _print_board_, _mark_board_, _clear_board_, _update_board_ and _reset_board_.
+This class is responsible for rendering the game board, modifying and resetting it. It has 1 class variable _@@board_cells_ which is used for storing(and modifying!) the values of board cells, and it has 5 class methods to _print_board_, _mark_board_, _clear_board_, _update_board_ and _reset_board_.
 
 - **GamePlay**
-We created this module to determine the winner of the game. It has a constant WIN_STATES which is for storing the cell combinations that makes the player winner. There is also a _won?_ function that accepts parameter _Player_ object and compares the _@turns_ variable of player with the WIN_STATES constant. The result of this comparison going to be the result of this method. We added custom method to _Array_ class called _contain_all?_ which is used inside _won?_ method.
+We created this module to determine the winner of the game. It has a constant WIN_STATES which is for storing the cell combinations that make the player wins. There is also a _won?_ a function that accepts parameter _Player_ object and compares the _@turns_ variable of the player with the WIN_STATES constant. The result of this comparison going to be the result of this method. We added a custom method to _Array_ class called _contain_all?_ which is used inside _won?_ method.
 
 In the main.rb file we defined some methods to optimize code and avoid repeated code.
 
