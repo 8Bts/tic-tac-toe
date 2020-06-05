@@ -1,2 +1,67 @@
 # tic-tac-toe
 This project is about building simple tic tac toe game which is a console application
+
+# Object Oriented PRogramming - Tic Tac Toe console game
+
+This project is about exercising the main concepts of object oriented programming particularly  classes and access to their attributes to build a tic tac toe game that runs in the terminal.
+
+<h3>About Game</h3>
+<p>Tic Tac To is a game played between two players. It is played on a 3X3 grid board an can be played for as many time as desired. 
+Players take turns to mark the grid and their selections are reflected on the grid with X and O characters. The winner of the game is determined when one of players markes a complete row or column or diagonal of the grid. </p>
+
+<h3>Project description</h3>
+In this branch we created actual logic for the tic-tac-toe game. We defined _Player_, _GameBoard_ classes and _GamePlay_ module in the seperate .rb files. Here is the purposes of these assets:
+
+- **Player**
+ This class represent player information like _name_, played turns and _sign_ used to mark gameboard. It also defines 2 methods which are responsible to _make_turn_ and _reset_ the turns state.
+
+- **GameBoard**
+This class is responsible for rendering game board, modifying and resetting it. It has 1 class variable _@@board_cells_ which is used for storing(and modifying!) the values of board cells, and it has 5 class methods to _print_board_, _mark_board_, _clear_board_, _update_board_ and _reset_board_.
+
+- **GamePlay**
+We created this module to determine the winner of the game. It has a constant WIN_STATES which is for storing the cell combinations that makes the player winner. There is also a _won?_ function that accepts parameter _Player_ object and compares the _@turns_ variable of player with the WIN_STATES constant. The result of this comparison going to be the result of this method. We added custom method to _Array_ class called _contain_all?_ which is used inside _won?_ method.
+
+In the main.rb file we defined some methods to optimize code and avoid repeated code.
+
+## Built With
+
+- Ruby 2.5.5p157/2.6.6p146
+- VS Code
+- Repl.it
+
+## Live Demo
+
+<a href="https://repl.it/@8Bts/enumerables#main.rb" target="_blank">Live version</a>
+
+## Authors
+
+👤 **Rashid Mammadli**
+
+- Github: [8Bts](https://github.com/8Bts)
+- Twitter: [@Rasheed49705929](https://twitter.com/Rasheed49705929)
+- Linkedin: [linkedin](https://www.linkedin.com/in/mcmizze-price-238a70135/)
+- Email: mcmizze@yahoo.com
+
+**Mworekwa Ezekiel**
+
+- Github: [@vanheaven-ui](https://github.com/vanheaven-ui)
+- Twitter: [@MworekwaE](https://twitter.com/MworekwE)
+- Linkedin: [@linkedin](https://www.linkedin.com/in/vanheaven/)
+- Email: [ezekiel](mailto:vanheaven6@gmail.com)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the <a href="https://github.com/8Bts/Enumerables/issues" target="_blank">issues page</a>.
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+ 
+- <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>
+- <a href="https://ruby-doc.org/core-2.6.1/Enumerable.html#method-i-all-3F" target="_blank">Ruby Docs</a>
+- <a href="https://www.stackoverflow.com/" target="_blank">Stackoverflow</a>
+
