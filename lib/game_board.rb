@@ -1,3 +1,4 @@
+# rubocop: disable Style/ClassVars
 class GameBoard
   @@board_cells = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
@@ -31,3 +32,4 @@ class GameBoard
     @@board_cells.size.times { |index| @@board_cells[index] = index + 1 }
   end
 end
+# rubocop: enable Style/ClassVars

@@ -21,5 +21,5 @@ class Player
 
   def reset_turns
     @turns = []
-  end  
+  end
 end

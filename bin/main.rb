@@ -41,7 +41,6 @@ def winner?(player)
   false
 end
 
-
 loop do
   play_again = false
   counter = 0
