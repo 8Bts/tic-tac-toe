@@ -3,7 +3,7 @@
 This project is about exercising the main concepts of object-oriented programming particularly classes and access to their attributes to build a tic tac toe game that runs in the terminal.
 
 <h3>About the Game</h3>
-<p>Tic Tac Toe is a game played between two players. It is played on a 3X3 grid board and can be played for as many times as desired. 
+<p>Tic Tac Toe is a game played between two players. It is played on a 3x3 grid board and can be played for as many times as desired. 
 Players take turns to mark the grid and their selections are reflected on the grid with X and O characters. The winner of the game is determined when one of the players makes a complete row or column or diagonal of the grid. </p>
 
 <h3>How to play</h3>
