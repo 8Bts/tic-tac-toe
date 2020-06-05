@@ -11,23 +11,23 @@ class GameBoard
   end
 
   def self.mark_board(index, sign)
-       
-    return "The cell with index[#{index}] is already signed, choose another cell on board" if @@board_cells[index - 1].is_a?(String)
+    if @@board_cells[index - 1].is_a?(String)
+      return "The cell with index[#{index}] is already signed, choose another cell on board"
+    end
 
     @@board_cells[index - 1] = sign
-
   end
 
   def self.clear_board
-    system("clear")
+    system('clear')
   end
 
   def self.update_board
     GameBoard.clear_board
     GameBoard.print_board
   end
+
+  def self.reset_board
+    @@board_cells.size.times { |index| @@board_cells[index] = index + 1 }
+  end
 end
-
-
-
-

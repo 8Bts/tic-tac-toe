@@ -19,5 +19,7 @@ class Player
     index
   end
 
+  def reset_turns
+    @turns = []
+  end  
 end
-
