@@ -14,7 +14,7 @@ On each turn, players must select a cell number displayed on the board which is 
 
 Here are some winning cases:
 
-![screenshot](https://github.com/8Bts/tic-tac-toe/tree/readme_game_instructions/TICTACTOE.png)
+![screenshot](https://github.com/8Bts/tic-tac-toe/blob/readme_game_instructions/TICTACTOE.png)
 
 <h3>Project description</h3>
 In this branch, we created actual logic for the tic-tac-toe game. We defined _Player_, _GameBoard_ classes, and _GamePlay_ module in the separate .rb files. Here are the purposes of these assets:
