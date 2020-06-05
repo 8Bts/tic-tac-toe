@@ -1,7 +1,4 @@
-# tic-tac-toe
-This project is about building simple tic tac toe game which is a console application
-
-# Object Oriented PRogramming - Tic Tac Toe console game
+# Object Oriented Programming - Tic Tac Toe console game
 
 This project is about exercising the main concepts of object-oriented programming particularly classes and access to their attributes to build a tic tac toe game that runs in the terminal.
 
@@ -16,8 +13,8 @@ Here are some winning cases:
 
 ![screenshot](https://github.com/8Bts/tic-tac-toe/blob/readme_game_instructions/TICTACTOE.png)
 
-<h3>Project description</h3>
-In this branch, we created actual logic for the tic-tac-toe game. We defined _Player_, _GameBoard_ classes, and _GamePlay_ module in the separate .rb files. Here are the purposes of these assets:
+<h3>Project Description</h3>
+In this project, we created actual logic for the tic-tac-toe game. We defined _Player_, _GameBoard_ classes, and _GamePlay_ module in the separate .rb files. Here are the purposes of these assets:
 
 - **Player**
  This class represents player information like _name_, played turns, and _sign_ used to mark gameboard. It also defines 2 methods that are responsible for _make_turn_ and _reset_ the turns state.
@@ -28,7 +25,8 @@ This class is responsible for rendering the game board, modifying and resetting 
 - **GamePlay**
 We created this module to determine the winner of the game. It has a constant WIN_STATES which is for storing the cell combinations that make the player wins. There is also a _won?_ a function that accepts parameter _Player_ object and compares the _@turns_ variable of the player with the WIN_STATES constant. The result of this comparison going to be the result of this method. We added a custom method to _Array_ class called _contain_all?_ which is used inside _won?_ method.
 
-In the main.rb file we defined some methods to optimize code and avoid repeated code.
+- **Executable File**
+In the main.rb file we defined some methods to optimize code and avoid repeated code. This is the executable file for the game.
 
 ## Built With
 
@@ -38,7 +36,7 @@ In the main.rb file we defined some methods to optimize code and avoid repeated 
 
 ## Live Demo
 
-<a href="https://repl.it/@8Bts/enumerables#main.rb" target="_blank">Live version</a>
+<a href="#" target="_blank">To be updated</a>
 
 ## Authors
 
@@ -60,7 +58,7 @@ In the main.rb file we defined some methods to optimize code and avoid repeated 
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the <a href="https://github.com/8Bts/Enumerables/issues" target="_blank">issues page</a>.
+Feel free to check the <a href="https://github.com/8Bts/tic-tac-toe/issues" target="_blank">issues page</a>.
 
 ## Show your support
 
