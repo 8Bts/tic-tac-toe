@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-
 require_relative '../lib/game_board'
 require_relative '../lib/player.rb'
 require_relative '../lib/game_play.rb'
