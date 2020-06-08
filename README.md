@@ -34,6 +34,26 @@ In the main.rb file we defined some methods to optimize code and avoid repeated 
 - VS Code
 - Repl.it
 
+## Getting Started 
+
+To get a local copy follow these simple example steps.
+
+ - Click on **Clone or download** button of this repository and copy the URL(or you can just download .zip).
+ - Open your command prompt and run this command: git clone COPIED-URL
+
+
+## Prerequisites
+In order to make the program work, you need to have ruby interpreter. You can get the latest version of ruby from [official website](https://www.ruby-lang.org/en/downloads/).
+
+
+## Usage
+- Open your command prompt and navigate to 'bin' folder of tic-tac-toe(use 'cd' command)
+- Type ruby main.rb
+- Enjoy game!
+
+
+
+
 ## Live Demo
 
 <a href="https://repl.it/@vanheavenui/tic-tac-toe" target="_blank">Live Demo Link</a>
