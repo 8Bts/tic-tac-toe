@@ -56,7 +56,7 @@ In order to make the program work, you need to have ruby interpreter installed i
 
 ## Live Demo
 
-<a href="https://repl.it/@vanheavenui/tic-tac-toe" target="_blank">Live Demo Link</a>
+<a href="https://repl.it/@8Bts/tic-tac-toe#bin/main.rb" target="_blank">Live Demo Link</a>
 
 ## Authors
 
