@@ -36,7 +36,7 @@ In the main.rb file we defined some methods to optimize code and avoid repeated 
 
 ## Live Demo
 
-<a href="#" target="_blank">To be updated</a>
+<a href="https://repl.it/@vanheavenui/tic-tac-toe" target="_blank">Live Demo Link</a>
 
 ## Authors
 
