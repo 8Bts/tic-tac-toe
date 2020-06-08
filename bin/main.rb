@@ -3,14 +3,14 @@ require_relative '../lib/game_board'
 require_relative '../lib/player.rb'
 require_relative '../lib/game_play.rb'
 
-def get_name
+def p_get_name
   name = gets.chomp
   while name.empty?
-  puts 'Please type your name!'
-  name = gets.chomp
+    puts 'Please type your name!'
+    name = gets.chomp
   end
   name
-end  
+end
 
 # Determine player to go first
 def choose_first(player1, player2)
@@ -44,10 +44,10 @@ end
 puts 'Welcome!! to Tic Tac Toe, a game for geniuses'
 
 puts 'player 1: please enter your name'
-p1 = Player.new(get_name, 'X')
+p1 = Player.new(p_get_name, 'X')
 
 puts 'player 2: please enter your name'
-p2 = Player.new(get_name, 'O')
+p2 = Player.new(p_get_name, 'O')
 
 loop do
   play_again = false
