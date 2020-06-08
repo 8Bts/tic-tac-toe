@@ -47,9 +47,9 @@ In order to make the program work, you need to have ruby interpreter. You can ge
 
 
 ## Usage
-- Open your command prompt and navigate to 'bin' folder of tic-tac-toe(use 'cd' command)
-- Type ruby main.rb
-- Enjoy game!
+1. Open your command prompt and navigate to 'bin' folder of tic-tac-toe(use 'cd' command)
+2. Type ruby main.rb
+3. Enjoy game!
 
 
 
