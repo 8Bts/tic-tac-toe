@@ -43,7 +43,7 @@ To get a local copy follow these simple example steps.
 
 
 ## Prerequisites
-In order to make the program work, you need to have ruby interpreter. You can get the latest version of ruby from [official website](https://www.ruby-lang.org/en/downloads/).
+In order to make the program work, you need to have ruby interpreter installed in your system. You can get the latest version of ruby from [official website](https://www.ruby-lang.org/en/downloads/).
 
 
 ## Usage
