@@ -2,6 +2,10 @@
 class GameBoard
   @@board_cells = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+  def self.board_cells
+    @@board_cells
+  end  
+
   def self.print_board
     "\n\n\
     \t\t #{@@board_cells[0]}  |  #{@@board_cells[1]}  |  #{@@board_cells[2]}
@@ -12,6 +16,7 @@ class GameBoard
   end
 
   def self.mark_board(index, sign)
+    return 'Wrong index' if index < 1 || index > 9
     if @@board_cells[index - 1].is_a?(String)
       return "The cell with index[#{index}] is already signed, choose another cell on board"
     end

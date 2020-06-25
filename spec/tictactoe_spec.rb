@@ -24,7 +24,7 @@ describe Player do
         expect(player.make_turn(1)).to eql(1)
       end
 
-      it 'string notifying wrong index entered when invalid index entered' do
+      it 'string notifying wrong index entered when invalid index passed' do
         expect(player.make_turn(10)).to eql('Wrong index')
       end
 
@@ -61,4 +61,26 @@ describe Array do
 end
 
 describe GameBoard do
+  describe '#mark_board' do
+    context 'returns' do
+      it 'sign passed as an argument on success' do
+        expect(GameBoard.mark_board(3, 'X')).to eql 'X'
+      end
+
+      it 'string notifying that cell is already signed' do
+        expect(GameBoard.mark_board(3, 'X')).to eql 'The cell with index[3] is already signed, choose another cell on board'
+      end
+
+      it 'string notifying wrong index entered when invalid index passed' do
+        expect(GameBoard.mark_board(32, 'X')).to eql('Wrong index')
+      end
+    end
+  end
+
+  describe '#reset_board' do
+    it 'restore @@board_cells class variable\'s initial values' do
+      GameBoard.reset_board
+      expect(GameBoard.board_cells).to contain_exactly(1, 2, 3, 4, 5, 6, 7, 8, 9)
+    end  
+  end
 end
