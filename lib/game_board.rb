@@ -4,7 +4,7 @@ class GameBoard
 
   def self.board_cells
     @@board_cells
-  end  
+  end
 
   def self.print_board
     "\n\n\
@@ -18,7 +18,7 @@ class GameBoard
   def self.mark_board(index, sign)
     return 'Wrong index' if index < 1 || index > 9
     if @@board_cells[index - 1].is_a?(String)
-      return "The cell with index[#{index}] is already signed, choose another cell on board"
+      return "The cell with index[#{index}] is already signed, choose another cell"
     end
 
     @@board_cells[index - 1] = sign

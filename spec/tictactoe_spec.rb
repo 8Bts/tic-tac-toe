@@ -29,7 +29,7 @@ describe Player do
       end
 
       it 'string notifying that cell is already signed' do
-        expect(player.make_turn(1)).to eql('The cell with index[1] is already signed, choose another cell on board')
+        expect(player.make_turn(1)).to eql('The cell with index[1] is already signed, choose another cell')
       end
     end
   end
@@ -45,13 +45,13 @@ end
 
 describe Array do
   describe '#contain_all?' do
-  context 'returns' do
-    it 'true when an array contains all elements of an argument' do
-      expect([1, 3, 5, 7].contain_all?([3, 1, 7])).to be_truthy
-    end
-    
-    it 'false when an array doesn\'t contain all elements of an argument' do
-      expect([1, 3, 5, 7].contain_all?([2, 3, 5])).to be_falsey
+    context 'returns' do
+      it 'true when an array contains all elements of an argument' do
+        expect([1, 3, 5, 7].contain_all?([3, 1, 7])).to be_truthy
+      end
+
+      it 'false when an array doesn\'t contain all elements of an argument' do
+        expect([1, 3, 5, 7].contain_all?([2, 3, 5])).to be_falsey
       end
     end
   end
@@ -63,22 +63,22 @@ describe GameBoard do
       it 'sign passed as an argument on success' do
         expect(GameBoard.mark_board(3, 'X')).to eql 'X'
       end
-      
+
       it 'string notifying that cell is already signed' do
-        expect(GameBoard.mark_board(3, 'X')).to eql 'The cell with index[3] is already signed, choose another cell on board'
+        expect(GameBoard.mark_board(3, 'X')).to eql 'The cell with index[3] is already signed, choose another cell'
       end
-      
+
       it 'string notifying wrong index entered when invalid index passed' do
         expect(GameBoard.mark_board(32, 'X')).to eql('Wrong index')
       end
     end
   end
-  
+
   describe '#reset_board' do
-  it 'restore @@board_cells class variable\'s initial values' do
-    GameBoard.reset_board
+    it 'restore @@board_cells class variable\'s initial values' do
+      GameBoard.reset_board
       expect(GameBoard.board_cells).to contain_exactly(1, 2, 3, 4, 5, 6, 7, 8, 9)
-    end  
+    end
   end
 end
 
@@ -98,6 +98,6 @@ describe GamePlay do
         player.reset_turns
         expect(GamePlay.won?(player)).to be_falsey
       end
-    end  
-  end  
+    end
+  end
 end
