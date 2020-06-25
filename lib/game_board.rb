@@ -19,12 +19,8 @@ class GameBoard
     @@board_cells[index - 1] = sign
   end
 
-  def self.clear_board
-    system('clear')
-  end
-
   def self.update_board
-    GameBoard.clear_board
+    system('clear')
     GameBoard.print_board
   end
 

@@ -1,4 +1,4 @@
 {
-  "ruby.rubocop.configFilePath": "C:\\Ruby26-x64\\bin\\",
-  "ruby.rubocop.executePath": "C:\\Users\\Admin\\Desktop\\Ruby-practice\\tic-tac-toe\\.rubocop.yml"
+    "ruby.rubocop.executePath": "/home/mcmizze/.rbenv/shims/",
+    "ruby.rubocop.configFilePath": "/home/mcmizze/Desktop/microverse/tic-tac-toe/.rubocop.yml"
 }
