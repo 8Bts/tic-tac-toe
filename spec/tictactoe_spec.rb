@@ -39,14 +39,25 @@ describe Player do
       player.make_turn(2)
       player.reset_turns
       expect(player.turns).to be_empty
-    end  
-  end  
+    end
+  end
 end
 
 describe GamePlay do
 end
 
 describe Array do
+  describe '#contain_all?' do
+    context 'returns' do
+      it 'true when an array contains all elements of an argument' do
+        expect([1, 3, 5, 7].contain_all?([3, 1, 7])).to be_truthy
+      end
+
+      it 'false when an array doesn\'t contain all elements of an argument' do
+        expect([1, 3, 5, 7].contain_all?([2, 3, 5])).to be_falsey
+      end
+    end
+  end
 end
 
 describe GameBoard do
