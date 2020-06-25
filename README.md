@@ -33,6 +33,7 @@ In the main.rb file we defined some methods to optimize code and avoid repeated 
 - Ruby 2.5.5p157/2.6.6p146
 - VS Code
 - Repl.it
+- RSpec
 
 ## Getting Started 
 
@@ -73,6 +74,11 @@ In order to make the program work, you need to have ruby interpreter installed i
 - Twitter: [@MworekwaE](https://twitter.com/MworekwE)
 - Linkedin: [@linkedin](https://www.linkedin.com/in/vanheaven/)
 - Email: [ezekiel](mailto:vanheaven6@gmail.com)
+
+**Tendongze Godson**
+- Github: [@tGodson](https://github.com/tGodson) 
+- Twitter: [@tendongze-godson](https://twitter.com/tendongze-godson) 
+- Linkedin: [linkedin](https://linkedin.com/in/tendongze95) 
 
 ## 🤝 Contributing
 
